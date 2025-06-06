@@ -1,0 +1,34 @@
+{
+  "name": "fromni-campaign-manager",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:frontend": "nuxt dev --port 3000",
+    "dev:api": "nodemon server/index.js",
+    "db:init": "node server/db/init.js",
+    "db:migrate": "node server/db/migrate.js",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia/nuxt": "^0.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.0",
+    "redis": "^5.5.5",
+    "xss": "^1.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "nuxt": "^3.10.3"
+  }
+}

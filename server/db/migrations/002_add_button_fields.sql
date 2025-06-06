@@ -1,0 +1,5 @@
+ALTER TABLE buttons 
+ADD COLUMN IF NOT EXISTS title VARCHAR(255),
+ADD COLUMN IF NOT EXISTS type VARCHAR(50) DEFAULT 'text';
+
+UPDATE buttons SET type = 'text' WHERE type IS NULL; 
